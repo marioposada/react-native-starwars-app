@@ -9,50 +9,53 @@ import {
 } from "react-native";
 
 const CardDetail = ({ item }) => {
-  const { name, url } = item;
+  console.warn(item.url);
+  console.warn(item.name);
 
   return (
-    <TouchableOpacity style={styles.touch}>
-      <ImageBackground source={{uri: url}} style={styles.image}>
+    <TouchableOpacity style={styles.touch} onPress={() => null}>
+      <ImageBackground
+        source={require("../../assets/Yoda.jpeg")}
+        style={styles.image}
+      >
         <View style={styles.container}>
-          <Text style={styles.text}>{name}</Text>
+          <Text style={styles.text}>{item.name}</Text>
         </View>
       </ImageBackground>
     </TouchableOpacity>
-   
   );
 };
 
 const styles = StyleSheet.create({
   image: {
-    flex: 1,
-    justifyContent: "center",
-    width: 80,
-    height: 80,
-    borderWidth: 1,
-    borderColor: "white",
+    justifyContent: "flex-end",
+    width: "100%",
+    height: "100%",
+    
   },
   text: {
-    flex: 1,
     color: "white",
-    fontSize: 10,
-    lineHeight: 84,
-    fontWeight: "bold",
+    fontSize: 11,
+    lineHeight: 20,
     textAlign: "left",
-    backgroundColor: "#000000c1",
+    zIndex: 2,
+    margin: 2,
+    fontWeight: "bold",
+    
+    
   },
   touch: {
-    margin: 3,
-    minWidth: 100,
-    maxWidth: 100,
+    margin: 2,
     alignItems: "center",
-    height: 90,
     backgroundColor: "#181818",
-    borderWidth: 1,
-    borderColor: "white",
+    width: 100,
+    height: 100,
+    margin:  3
   },
   container: {
-    justifyContent: "flex-start",
+    justifyContent: "flex-end",
+    
+    
   },
 });
 

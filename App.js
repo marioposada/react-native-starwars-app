@@ -11,20 +11,17 @@ import {
 import { useEffect, useState } from "react";
 
 import CardDetail from "./src/components/CardDetail";
-import axios from "axios";
-
-// import {useFetch} from './src/hooks/useFetch'
 
 export default function App() {
   const friends = [
     { id: 1, name: "Anakin Skywalker", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 2, name: "Luke Skywalker", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 3, name: "Obi Wan", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 4, name: "Leia Organa", url: '../../assets/Anakyn_Skywalker.jpeg' },
-    { id: 5, name: "Han Solo", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 6, name: "Yoda", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 7, name: "R2-D2", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 8, name: "Chewbacca", url: '../../assets/Anakyn_Skywalker.jpeg'},
+    { id: 2, name: "Luke Skywalker", url: '../../assets/Luke_Skywalker.jpeg'},
+    { id: 3, name: "Obi Wan", url: '../../assets/Obi_Wan.jpeg'},
+    { id: 4, name: "Leia Organa", url: '../../assets/Leia_organa.jpeg' },
+    { id: 5, name: "Han Solo", url: '../../assets/Han_Solo.jpeg'},
+    { id: 6, name: "Yoda", url: '../../assets/Yoda.jpeg'},
+    { id: 7, name: "R2-D2", url: '../../assets/R2_D2.jpeg'},
+    { id: 8, name: "Chewbacca", url: '../../assets/Chewbacca.jpeg'},
   ]
 
   return (
@@ -62,8 +59,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    borderWidth: 1,
-    borderColor:  "red"
+    backgroundColor: "#000000a1",
+
+
   },
   image: {
     flex: 1,
@@ -71,6 +69,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     justifyContent: "flex-start",
+ 
   },
   text: {
     color: "white",
