@@ -9,13 +9,12 @@ import {
 } from "react-native";
 
 const CardDetail = ({ item }) => {
-  console.warn(item.url);
-  console.warn(item.name);
+  
 
   return (
     <TouchableOpacity style={styles.touch} onPress={() => null}>
       <ImageBackground
-        source={require("../../assets/Yoda.jpeg")}
+        source={{uri: item.url}}
         style={styles.image}
       >
         <View style={styles.container}>
@@ -41,6 +40,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
     margin: 2,
     fontWeight: "bold",
+    backgroundColor: "#000000a1",
     
     
   },

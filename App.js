@@ -14,21 +14,23 @@ import CardDetail from "./src/components/CardDetail";
 
 export default function App() {
   const friends = [
-    { id: 1, name: "Anakin Skywalker", url: '../../assets/Anakyn_Skywalker.jpeg'},
-    { id: 2, name: "Luke Skywalker", url: '../../assets/Luke_Skywalker.jpeg'},
-    { id: 3, name: "Obi Wan", url: '../../assets/Obi_Wan.jpeg'},
-    { id: 4, name: "Leia Organa", url: '../../assets/Leia_organa.jpeg' },
-    { id: 5, name: "Han Solo", url: '../../assets/Han_Solo.jpeg'},
-    { id: 6, name: "Yoda", url: '../../assets/Yoda.jpeg'},
-    { id: 7, name: "R2-D2", url: '../../assets/R2_D2.jpeg'},
-    { id: 8, name: "Chewbacca", url: '../../assets/Chewbacca.jpeg'},
+    { id: 1, name: "Anakin Skywalker", url: 'https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg'},
+    { id: 2, name: "Luke Skywalker", url: 'https://vignette.wikia.nocookie.net/starwars/images/3/3f/C-3PO_TLJ_Card_Trader_Award_Card.png'},
+    { id: 3, name: "Obi Wan", url: 'https://placeimg.com/640/480/nature/grayscale'},
+    { id: 4, name: "Leia Organa", url: 'https://placeimg.com/640/480/arch/grayscale' },
+    { id: 5, name: "Han Solo", url: 'https://placeimg.com/640/480/animals/grayscale'},
+    { id: 6, name: "Yoda", url: 'https://placeimg.com/640/480/tech/grayscale'},
+    { id: 7, name: "R2-D2", url: 'https://placeimg.com/640/480/tech/grayscale'},
+    { id: 8, name: "Chewbacca", url: 'https://placeimg.com/640/480/tech/grayscale'},
   ]
+
+  
 
   return (
    <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <ImageBackground
-          source={require("../starwars-app/assets/fondoapp.jpeg")}
+          source={require("../starwars-app/assets/star-wars-background.jpeg")}
           style={styles.image}
         >
           <View style={styles.wrap}>
@@ -55,7 +57,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
+   
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
@@ -86,4 +88,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#000000f1",
     flexDirection: "row",
   },
+ 
 });
