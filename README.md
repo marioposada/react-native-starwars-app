@@ -2,7 +2,7 @@
 <h1 align="center">  React Native StarWars App  </h1>
 
 # Description
-Appfood is an App coded in React Native using the StarWars API.
+Appstarwars is an App coded in React Native using the StarWars API.
 
 ## Build Setup
 
