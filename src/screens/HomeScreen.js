@@ -129,14 +129,12 @@ export default function App() {
           style={styles.image}
         >
           <View style={styles.wrap}>
-            {/* <Text style={styles.text}>Mario</Text> */}
             <Image
               style={styles.logo}
               source={require("../../assets/logostarwars.png")}
             />
           </View>
           <FlatList
-            
             horizontal
             data={friends}
             renderItem={({ item }) => <CardDetail item={item} />}
@@ -181,5 +179,4 @@ const styles = StyleSheet.create({
     backgroundColor: "#000000f1",
     flexDirection: "row",
   },
- 
 });
